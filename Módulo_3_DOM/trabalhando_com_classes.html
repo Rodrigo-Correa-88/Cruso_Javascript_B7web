@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com classes</title>
+        <script>
+            function clique () {
+                const button = document.querySelector('button')
+                button.classList.add('verde');
+                button.classList.add('vermelho');
+                console.log(button.classList);
+                button.classList.remove('verde');
+                console.log(button.classList);
+
+                if (button.classList.contains('vermelho')) {
+                    button.classList.remove('vermelho')
+                    button.classList.add('roxo');
+                } else {
+                    button.classList.remove('roxo');
+                    button.classList.add('vermelho');
+                }
+                 console.log(button.classList);
+
+            }
+        </script>
+    </head>
+<body>
+    <h1>Olá Javascript</h1>
+    <h1>Outro Título</h1>
+
+    <div id="teste">
+        <ul>
+            <li>Algum item</li>
+            <li>algum item 2</li>
+        </ul>
+        <strong>Texto</strong>
+    </div>
+    <div id="teste2">
+        <ul>
+            <li>Algum item 3</li>
+            <li>algum item 4</li>
+        </ul>
+    </div>
+
+    <button class="botao azul" onclick="clique()">clique aqui</button>
+</body>
+</html>

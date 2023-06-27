@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Elementos</title>
+    <script>
+        function clicou () {
+
+            /* Criando uma constante para selecionar o input */
+            const input = document.querySelector('input');
+            const botao = document.querySelector('.botao')
+
+            /* Atributos são as propriedades da tag */
+            // console.log(input.getAttribute('type')); // acessando o type
+            // console.log(input.getAttribute('placeholder')); // acessando o type
+
+            /*
+            Utilizando um if para conferir a existência de atributos 
+
+            if (input.getAttribute('placeholder')) {
+                console.log("Tem Placeholder");
+            } else {
+                console.log("Não tem placeholder");
+            }
+            */
+
+            /* Incluindo ou modificando atributo */
+            //input.setAttribute('placeholder', 'senha');
+            //input.setAttribute('type', 'text')
+
+            if ( input.getAttribute('type') === ('text')) {
+                input.setAttribute('type', 'password');
+                botao.innerText = "Mostrar Senha";
+            } else {
+                input.setAttribute('type', 'text');
+                botao.innerText = "Ocultar Senha";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Olá Javascript</h1>
+    <h1>Outro Título</h1>
+
+    <div id="teste">
+        <ul>
+            <li>Algum item 1</li>
+            <li>algum item 2</li>
+        </ul>
+        <strong>Texto</strong>
+    </div>
+    <div id="teste2">
+        <ul>
+            <li>Algum item 3</li>
+            <li>algum item 4</li>
+        </ul>
+    </div>
+
+    <input type="password" placeholder="Digite o que quiser" class="input" name="algo">
+
+    <button class="botao" onclick="clicou()" >Mostrar Senha</button>
+</body>
+</html>
