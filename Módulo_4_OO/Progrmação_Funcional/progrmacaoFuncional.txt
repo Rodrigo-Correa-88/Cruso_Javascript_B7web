@@ -1,0 +1,4 @@
+Programação Funcional
+
+A programação funcional é um paradigma que se baseia estritamente
+em funções,

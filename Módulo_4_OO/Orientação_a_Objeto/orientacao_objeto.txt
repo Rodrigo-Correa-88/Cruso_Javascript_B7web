@@ -1,0 +1,8 @@
+Orientação a Objeto
+
+    Objeto na programação é a simulação de um objeto do mundo real,
+ja orientação a objeto é um paradigma de programação que organiza o 
+código em torno de objetos, que são instâncias de classes,cada objeto
+possui características(atributos) e comportamentos(métodos) específicos.
+
+Programação Orientada a objetos (OOP - Object Oriented Programming)
