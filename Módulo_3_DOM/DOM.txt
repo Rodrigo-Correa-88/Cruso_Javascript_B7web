@@ -1,6 +1,6 @@
 O que é DOM:
 
-DOM(Document Objet Model) são eventos de manipulação de conteudos 
+DOM (Document Objet Model) são eventos de manipulação de conteudos 
 de uma página web, os eventos DOM são ações que acontecem com 
 elementos específicos de uma página web.
 
