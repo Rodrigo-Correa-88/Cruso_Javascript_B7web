@@ -24,15 +24,48 @@ let listafil = lista.filter((item) => {
     }
     })
     
-/*  */
+/* determina se todos os itens do array são true de acordo com a 
+função específica */
 
 let array1 = [45,4,9,25];
 let arrayA = [];
 
 arrayA = array1.every((item) => {
-    if (item > 20 ) {
-        return true
-    } else {
-        return false
-    };  
+    return (item > 10) ? true : false
+})
+
+console.log(arrayA);
+
+/* retorna um elemento espacífico do array */
+
+let array2 = [45,4,9,25];
+let arrayB = [];
+
+arrayB = array2.find(function (item) {
+    return (item == 45) ? true : false;
+})
+
+console.log(arrayB);
+
+/* retorna a posição de um elemento específico do array */
+
+let array3 = [45,4,9,25];
+let arrayC = [];
+
+arrayC = array3.findIndex(function (item) {
+    return (item == 9) ? true : false;
+})
+
+console.log(arrayC);
+
+/* retorna a posição de um elemento específico do array */
+
+let usuarios = [
+    {id:1, nome:'Cloud', sobrenome:'Strife'},
+    {id:2, nome:'Tifa', sobrenome:'Lockhart'},
+    {id:1, nome:'Barret', sobrenome:'Wallace'},
+];
+
+let nome = usuarios.find(function (item) {
+    return (item.nome == 'Cloud' ) ? console.log("personagem no grupo") : console.log('Não esta no grupo');;
 })
