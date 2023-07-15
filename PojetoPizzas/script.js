@@ -33,7 +33,7 @@ pizzaJson.map((item, index)=> {
         size.querySelector('span').innerHTML = pizzaJson[key].sizes[sizeIndex];
     });
 
-    qy('.pizzaInfo--qt').innerHTMl = modalQt;
+    qy('.pizzaInfo--qt').innerHTML = modalQt;
     
     qy('.pizzaWindowArea').style.opacity = 0; 
     qy('.pizzaWindowArea').style.display = 'flex';
@@ -91,7 +91,19 @@ qy('.pizzaInfo--addButton').addEventListener('click', ()=>{
     closeModal();
 });
 
+qy('.menu-openner').addEventListener('click', () => {
+    if(cart.length > 0) {
+        qy('aside').style.left = '0';
+    }
+})
+
+qy('.menu-closer').addEventListener('click', () => {
+    qy('aside').style.left = '100vw';
+})
+
 function updateCart () {
+    qy('.menu-openner span').innerHTML = cart.length;
+
     if (cart.length > 0) {
         qy('aside').classList.add('show')
         qy('.cart').innerHTML = '';
@@ -151,6 +163,7 @@ function updateCart () {
 
     } else {
         qy('aside').classList.remove('show')
+        qy('aside').style.left = '100vw'
     }
 }
 
