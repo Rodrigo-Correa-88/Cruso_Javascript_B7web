@@ -1,0 +1,68 @@
+*{
+    font-family: 'Lugrasimo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.leftside {
+    background-image: url(../images/wp10033915-final-fantasy-logo-wallpapers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.leftside img {
+    height: auto;
+}
+
+.rightside {
+    box-shadow: -11px 0px 13px 2px rgba(0,0,0,0.20);;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    background:linear-gradient(180deg, rgba(0,0,0,1) 25%, rgba(104,45,20,1) 100%);
+    color: #fff;
+    padding: 50px;
+}
+
+.login-user input , .login-pass input {
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+}
+
+.login-button input {
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+
+.rightside .link-cadastro {
+    font-size: 12px;
+}
+
+.error {
+    font-size: 11px;
+    background-color: red;
+    color: #fff;
+    padding: 2px;
+}

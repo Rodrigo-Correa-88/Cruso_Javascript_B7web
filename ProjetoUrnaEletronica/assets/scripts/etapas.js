@@ -16,7 +16,7 @@ let etapas = [
                 nome: 'Legolas',
                 partido: 'Floresta das Trevas',
                 fotos: [
-                    { url: '', legenda: 'Vereador', }
+                    { url: 'legolas.jpg', legenda: 'Vereador', }
                 ]
             },
         ]
